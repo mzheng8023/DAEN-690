@@ -14,7 +14,7 @@ output = r'..\output_data'
 if not os.path.exists(output):
     os.mkdir(output)
 
-patt = re.compile(r'<([A-Za-z0-9]|\/|\\|,|;|\.|{|}|\[|\]|#|"|:|\-|_|=|%|\?|\&|' + r"'|â|€|“|™|˜|”| )+>")
+patt = re.compile(r'<([^>])+>')
 
 #company = argv[1]
 
